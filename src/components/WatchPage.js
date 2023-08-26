@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { closeSideBar } from "../utils/appSlice";
 import { useSearchParams } from "react-router-dom";
 import ReactPlayer from "react-player";
+import CommentsContainer from "./CommentsContainer";
 
 const WatchPage=()=>{
 
@@ -18,6 +19,7 @@ const WatchPage=()=>{
 
 
     return (
+        <div className="flex flex-col">
         <div className="px-5">
             {/* <iframe 
                 width="1200" 
@@ -36,6 +38,9 @@ const WatchPage=()=>{
                 width={1200}
                 height={600}
             />
+        </div>
+        {/* N-LEVEL nested comments */}
+        <CommentsContainer/>
         </div>
     );
 
