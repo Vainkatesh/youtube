@@ -4,4 +4,6 @@ const YOUTUBE_VIDEOS_API="https://youtube.googleapis.com/youtube/v3/videos?part=
 
 const YOUTUBE_SEARCH_SUGGESTIONS_API="http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 
-export {YOUTUBE_VIDEOS_API,YOUTUBE_SEARCH_SUGGESTIONS_API};
+const OFFSET_LIVE_CHAT=25;
+
+export {YOUTUBE_VIDEOS_API,YOUTUBE_SEARCH_SUGGESTIONS_API,OFFSET_LIVE_CHAT};
